@@ -1,8 +1,9 @@
 config.yml
-lib/sms_exchange.rb
+init.rb
+lib/sms_xchange.rb
 Manifest
 Rakefile
-README.rdoc
-test/integration/merchant_request_test.rb
+README
+test/mocks/sms_xchange_mock.rb
 test/test_helper.rb
-test/unit/sms_exchange_test.rb
+test/unit/sms_xchange_test.rb

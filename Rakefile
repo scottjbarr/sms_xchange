@@ -4,9 +4,9 @@ require 'rake/testtask'
 require 'echoe'
 require 'yaml'
 
-APP_NAME = "sms_exchange"
-APP_URL = "http://wiki.globalitcreations.com:8668/space/sms_exchange"
-APP_DESCRIPTION = "Ruby client for the SmsXchange.com serverice."
+APP_NAME = "sms_xchange"
+APP_URL = "http://wiki.globalitcreations.com:8668/space/SMS+Xchange"
+APP_DESCRIPTION = "Ruby client for the smsxchange.com service."
 AUTHOR_NAME = "Scott Barr"
 AUTHOR_EMAIL = "scottb@globalitcreations.com"
 
