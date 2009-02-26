@@ -3,7 +3,8 @@ init.rb
 lib/sms_xchange.rb
 Manifest
 Rakefile
-README
+README.rdoc
+sms_xchange.gemspec
 test/mocks/sms_xchange_mock.rb
 test/test_helper.rb
 test/unit/sms_xchange_test.rb
