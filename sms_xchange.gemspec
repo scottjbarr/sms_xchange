@@ -2,18 +2,18 @@
 
 Gem::Specification.new do |s|
   s.name = %q{sms_xchange}
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = ["Scott Barr"]
-  s.date = %q{2009-02-26}
+  s.date = %q{2009-03-07}
   s.description = %q{Ruby client for the smsxchange.com service.}
   s.email = %q{scottb@globalitcreations.com}
-  s.extra_rdoc_files = ["lib/sms_xchange.rb", "README"]
-  s.files = ["config.yml", "init.rb", "lib/sms_xchange.rb", "Manifest", "Rakefile", "README", "test/mocks/sms_xchange_mock.rb", "test/test_helper.rb", "test/unit/sms_xchange_test.rb", "sms_xchange.gemspec"]
+  s.extra_rdoc_files = ["lib/sms_xchange.rb", "README.rdoc"]
+  s.files = ["config.yml", "init.rb", "lib/sms_xchange.rb", "Manifest", "Rakefile", "README.rdoc", "sms_xchange.gemspec", "test/mocks/sms_xchange_mock.rb", "test/test_helper.rb", "test/unit/sms_xchange_test.rb"]
   s.has_rdoc = true
   s.homepage = %q{http://wiki.globalitcreations.com:8668/space/SMS+Xchange}
-  s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Sms_xchange", "--main", "README"]
+  s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Sms_xchange", "--main", "README.rdoc"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{sms_xchange}
   s.rubygems_version = %q{1.3.1}

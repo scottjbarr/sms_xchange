@@ -1,32 +1,32 @@
-=== SmsXchange
+= SmsXchange
 
 Send SMS messages via the SMS Xchange service.
 
 
-==== SMS Xchange Gateway
+== SMS Xchange Gateway
 
 See http://www.smsxchange.com/
 
   
-==== Features
+== Features
 
 * So easy to use, even a baby (with an SMS Xchange account) could SMS his
   baby pals.
+* Tested under Ruby 1.8.7 and Ruby 1.9
 
-
-==== Example
+== Example
 
   require 'sms_xchange'
   client = SmsExchange.new(:username => 'username', :password => 'password')
   client.send("6599998888", "Hi, this is a test message")
 
 
-==== References
+== References
 
 * http://www.smsxchange.com/main/sms_delivery.asp
 
 
-==== License
+== License
 
 (The MIT License)
 
