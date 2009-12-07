@@ -5,7 +5,7 @@ require 'echoe'
 require 'yaml'
 
 APP_NAME = "sms_xchange"
-APP_URL = "http://wiki.globalitcreations.com:8668/space/SMS+Xchange"
+APP_URL = "http://github.com/scottbarr/sms_xchange"
 APP_DESCRIPTION = "Ruby client for the smsxchange.com service."
 AUTHOR_NAME = "Scott Barr"
 AUTHOR_EMAIL = "scottb@globalitcreations.com"
