@@ -9,6 +9,7 @@ APP_URL = "http://github.com/scottbarr/sms_xchange"
 APP_DESCRIPTION = "Ruby client for the smsxchange.com service."
 AUTHOR_NAME = "Scott Barr"
 AUTHOR_EMAIL = "scottb@globalitcreations.com"
+GEM_HOST = "gems.globalitcreations.com"
 
 #
 # Create a version for this build from the config.yml and the BUILD_NUMBER
@@ -52,10 +53,10 @@ task :publish => [:test, :clean, :manifest, :repackage, :upload]
 task :upload do
   version = get_version
   
-  retval = system "rsync -av pkg/#{APP_NAME}-#{version}.gem git.globalitcreations.com:/var/www/gems.globalitcreations.com/gems/"
+  retval = system "rsync -av pkg/#{APP_NAME}-#{version}.gem #{GEM_HOST}:/var/www/gems.globalitcreations.com/gems/"
   Exception.new("rsync of gem failed") unless retval
   
-  retval = system "ssh git.globalitcreations.com 'cd /var/www/gems.globalitcreations.com/ ; gem generate_index'"
+  retval = system "ssh #{GEM_HOST} 'cd /var/www/gems.globalitcreations.com/ ; gem generate_index'"
   Exception.new("regenerating gem index failed") unless retval
 end
 
