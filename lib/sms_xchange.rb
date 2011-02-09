@@ -31,7 +31,7 @@ class SmsXchange
   #
   # Get the data to send to the service
   #
-  def get_data(phone, message, test = false)
+  def get_data(phone, message)
     sprintf(PARAMS, @username, @password, CGI.escape(phone), CGI.escape(message))
   end
   
@@ -51,7 +51,7 @@ class SmsXchange
   #
   def send(phone, message)
     url = get_url
-    url.query = get_data(phone, message, test)
+    url.query = get_data(phone, message)
     
     https = Net::HTTP.new(url.host, url.port)
     https.use_ssl = (url.scheme == 'https')
