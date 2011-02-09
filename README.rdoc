@@ -17,7 +17,7 @@ See http://www.smsxchange.com/
 == Example
 
   require 'sms_xchange'
-  client = SmsExchange.new(:username => 'username', :password => 'password')
+  client = SmsXchange.new(:username => 'username', :password => 'password')
   client.send("6599998888", "Hi, this is a test message")
 
 
